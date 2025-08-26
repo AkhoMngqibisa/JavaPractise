@@ -5,35 +5,35 @@ public class Loops {
         count4();
     }
 
-    public static void count(){
-        for(int i = 1; i <= 5; i++){
-            System.out.println("Count "+i);
+    public static void count() {
+        for (int i = 1; i <= 5; i++) {
+            System.out.println("Count " + i);
         }
     }
 
-    public static void count2(){
+    public static void count2() {
         int count = 1;
 
-        while(count <= 5) {
-            System.out.println("Count "+count);
-            count ++;
+        while (count <= 5) {
+            System.out.println("Count " + count);
+            count++;
         }
     }
 
-    public static void count3(){
+    public static void count3() {
         int count = 1;
 
         do {
-            System.out.println("Count "+count);
-            count ++;
+            System.out.println("Count " + count);
+            count++;
         } while (count <= 5);
     }
 
-    public static void count4(){
-        String [] names = {"Akhona","Phumlisa","Andy"};
+    public static void count4() {
+        String[] names = {"Akhona", "Phumlisa", "Andy"};
 
-        for(String name: names ) {
-            System.out.println("Name: "+name);
+        for (String name : names) {
+            System.out.println("Name: " + name);
         }
     }
 }
