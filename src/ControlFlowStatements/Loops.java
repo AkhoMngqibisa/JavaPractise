@@ -2,7 +2,7 @@ package ControlFlowStatements;
 
 public class Loops {
     static void main() {
-        count3();
+        count4();
     }
 
     public static void count(){
@@ -27,5 +27,13 @@ public class Loops {
             System.out.println("Count "+count);
             count ++;
         } while (count <= 5);
+    }
+
+    public static void count4(){
+        String [] names = {"Akhona","Phumlisa","Andy"};
+
+        for(String name: names ) {
+            System.out.println("Name: "+name);
+        }
     }
 }
