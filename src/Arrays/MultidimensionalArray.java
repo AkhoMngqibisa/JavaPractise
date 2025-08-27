@@ -13,6 +13,7 @@ public class MultidimensionalArray {
 
         int[] ints = new int[20];
         insertIntoArray(ints, 0, 10);
+        removeFromArray(ints, 10);
     }
 
     public static void insertIntoArray(int[] array, int insertIndex, int newValue) {
@@ -23,5 +24,12 @@ public class MultidimensionalArray {
 
         //insert new value
         array[insertIndex] = newValue;
+    }
+
+    public static void removeFromArray(int[] array, int removeIndex) {
+
+        for (int i = removeIndex; i < array.length - 1; i++) {
+            array[i] = array[i + 1];
+        }
     }
 }
