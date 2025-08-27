@@ -11,5 +11,17 @@ public class MultidimensionalArray {
             }
         }
 
+        int[] ints = new int[20];
+        insertIntoArray(ints, 0, 10);
+    }
+
+    public static void insertIntoArray(int[] array, int insertIndex, int newValue) {
+        //move elements below insertion point.
+        for (int i = array.length - 1; i > insertIndex; i--) {
+            array[i] = array[i - 1];
+        }
+
+        //insert new value
+        array[insertIndex] = newValue;
     }
 }
